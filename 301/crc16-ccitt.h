@@ -55,7 +55,7 @@ extern "C" {
  * be initialized (zero for xmodem).
  * @param chr One byte of data
  */
-void crc16_ccitt_single(uint16_t* crc, const uint8_t chr);
+void CO_crc16_ccitt_single(uint16_t* crc, const uint8_t chr);
 
 /**
  * Calculate CRC sum on block of data.
@@ -67,7 +67,7 @@ void crc16_ccitt_single(uint16_t* crc, const uint8_t chr);
  *
  * @return Calculated CRC.
  */
-uint16_t crc16_ccitt(const uint8_t block[], size_t blockLength, uint16_t crc);
+uint16_t CO_crc16_ccitt(const uint8_t block[], size_t blockLength, uint16_t crc);
 
 /** @} */ /* CO_crc16_ccitt */
 
